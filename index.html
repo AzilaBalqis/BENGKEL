@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nur Azila Balqis · Front-end developer — work, printed pink</title>
+  <meta name="description" content="Nur Azila Balqis is a front-end developer in Austin, TX. Semantic HTML, hand-written CSS, JavaScript that stays out of the way. Selected work, skills, experience, and contact." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f0cdbf'/%3E%3Ccircle cx='15' cy='17' r='9' fill='%23f0c33a'/%3E%3Ccircle cx='13' cy='15' r='9' fill='none' stroke='%231aa3c2' stroke-width='3'/%3E%3Ccircle cx='18' cy='19' r='6' fill='none' stroke='%23e8497a' stroke-width='3'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to selected work</a>
+
+  <!-- ░░ N6 · Newspaper masthead ░░ -->
+  <header class="masthead" role="banner">
+    <p class="masthead__issue">Portfolio · Edition 2026 · Austin, TX &middot; Open to work</p>
+    <a class="masthead__name" href="#hero"><span class="riso-mis" data-text="Nur Azila Balqis">Alex&nbsp;Morgan</span></a>
+    <nav class="masthead__nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#journey">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="masthead__cta">
+      <a class="btn btn--solid" href="#contact">Let&rsquo;s talk</a>
+    </div>
+    <hr class="masthead__rule" aria-hidden="true" />
+  </header>
+
+  <main id="top">
+
+    <!-- ░░ HERO · catalogue inventory header + Tier-A CSS riso plate ░░ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="kicker">Front-end developer &middot; Austin, TX &middot; freelance &amp; full-time</p>
+        <h1 id="hero-title" class="hero__title">
+          <span class="riso-mis" data-text="Clean, modern">Clean, modern</span>
+          web experiences. Semantic HTML. Hand-set CSS.
+        </h1>
+        <p class="hero__lede">
+          I&rsquo;m Nur Azila Balqis. I build fast, accessible interfaces &mdash; JavaScript
+          that stays out of the way, layout that holds under real content, and
+          typography worth reading. Everything ships keyboard-friendly and works
+          when the network doesn&rsquo;t.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#projects">View my work</a>
+          <a class="btn btn--text" href="#contact">Contact me <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <dl class="hero__facts">
+          <div class="fact"><dt>Status</dt><dd>Available &mdash; replies inside a day</dd></div>
+          <div class="fact"><dt>Base</dt><dd>Austin, TX &middot; remote friendly</dd></div>
+          <div class="fact"><dt>Currently</dt><dd>Heading TaskFlow, the thing in my editor</dd></div>
+        </dl>
+      </div>
+
+      <!-- Pure-CSS risograph centrepiece: three overprinted ink layers,
+           deliberately misregistered, multiply-blended, with paper grain. -->
+      <figure class="hero__art">
+        <div class="riso-plate">
+          <span class="riso-ink riso-ink--yellow" aria-hidden="true"></span>
+          <span class="riso-ink riso-ink--cyan" aria-hidden="true"></span>
+          <span class="riso-ink riso-ink--pink" aria-hidden="true"></span>
+          <span class="riso-grain" aria-hidden="true"></span>
+        </div>
+        <figcaption class="riso-plate__cap">Plate 01 &middot; three passes &middot; misregistered on purpose</figcaption>
+      </figure>
+    </section>
+
+    <!-- ░░ ABOUT · lede + portrait plate + facts ░░ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="band">
+        <h2 id="about-title" class="band__title"><span class="riso-mis" data-text="About me">About me</span></h2>
+        <p class="band__count">Section 01 &middot; the person behind the prints</p>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__figure">
+          <!-- Replace the SVG inside .plate-frame with a real photo:
+               <img src="assets/portrait.jpg" alt="Portrait of Nur Azila Balqis" width="320" height="320" /> -->
+          <div class="plate-frame">
+            <svg class="portrait" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated portrait of Nur Azila Balqis">
+              <circle class="av-wash" cx="160" cy="168" r="118" />
+              <circle class="av-orbit" cx="160" cy="168" r="118" stroke-dasharray="3 7" />
+              <path class="av-shirt" d="M84 320 C84 258 118 240 160 240 C202 240 236 258 236 320 Z" />
+              <path class="av-collar" d="M142 240 L160 262 L178 240" />
+              <path class="av-skin" d="M144 218 h32 v34 a16 16 0 0 1 -32 0 Z" />
+              <path class="av-jaw" d="M152 236 a8 8 0 0 0 16 0" />
+              <ellipse class="av-skin" cx="160" cy="158" rx="52" ry="58" />
+              <path class="av-hair" d="M112 150 C108 104 134 88 160 88 C186 88 212 104 208 150 C206 124 196 112 186 112 C168 112 154 106 148 98 C140 108 116 116 112 150 Z" />
+              <path class="av-hair" d="M108 154 c-6 18 -2 34 4 44 c-2 -14 0 -30 6 -40 Z" />
+              <path class="av-hair" d="M212 154 c6 18 2 34 -4 44 c-2 -14 0 -30 -6 -40 Z" />
+              <g class="av-glasses">
+                <rect x="118" y="150" width="34" height="26" rx="9" />
+                <rect x="168" y="150" width="34" height="26" rx="9" />
+                <path d="M152 160 h16" />
+                <path d="M118 156 l-10 -4" />
+                <path d="M202 156 l10 -4" />
+              </g>
+              <circle class="av-eyes" cx="135" cy="163" r="3.5" />
+              <circle class="av-eyes" cx="185" cy="163" r="3.5" />
+              <path class="av-smile" d="M148 194 q12 10 24 0" />
+              <circle class="av-blush" cx="122" cy="186" r="9" />
+              <circle class="av-blush" cx="198" cy="186" r="9" />
+              <g class="av-plate">
+                <rect x="64" y="290" width="192" height="26" rx="13" />
+                <text x="160" y="307" text-anchor="middle" class="av-plate-text">NUR AZILA BALQIS</text>
+              </g>
+            </svg>
+            <span class="riso-grain" aria-hidden="true"></span>
+          </div>
+          <p class="riso-plate__cap">Proof 02 &middot; the developer, two-colour</p>
+        </div>
+
+        <div class="about__body">
+          <p class="about__intro">
+            I&rsquo;m a front-end developer based in Austin, working with teams and individuals
+            who want their product to look deliberate and behave sharply. My work
+            leans on the fundamentals: understated layout, readable type, interfaces
+            that keep working when the network doesn&rsquo;t.
+          </p>
+          <p class="about__intro">
+            Slow things I like: well-named CSS, honest release notes, and interfaces
+            users never think about because it just worked on the first try.
+          </p>
+          <dl class="hero__facts about__facts">
+            <div class="fact"><dt>Specialty</dt><dd>Hand-built front-ends</dd></div>
+            <div class="fact"><dt>Focus</dt><dd>Performance &middot; a11y</dd></div>
+            <div class="fact"><dt>Working from</dt><dd>Austin, TX &middot; remote</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ SKILLS · varied rows, not icon tiles ░░ -->
+    <section class="skills" id="skills" aria-labelledby="skills-title">
+      <div class="band">
+        <h2 id="skills-title" class="band__title"><span class="riso-mis" data-text="Tools of the trade">Tools of the trade</span></h2>
+        <p class="band__count">Section 02 &middot; what I reach for, by group</p>
+      </div>
+
+      <div class="skills-wrap">
+        <ul class="work-list" role="list">
+          <li class="skill">
+            <h3 class="skill__name">Markup &amp; layout</h3>
+            <ul class="skill__tags" role="list" aria-label="Markup and layout skills">
+              <li>HTML5</li><li>Semantic markup</li><li>CSS Grid &amp; Flexbox</li>
+              <li>Responsive design</li><li>CSS custom properties</li>
+            </ul>
+          </li>
+          <li class="skill">
+            <h3 class="skill__name">Scripting &amp; data</h3>
+            <ul class="skill__tags" role="list" aria-label="Scripting and data skills">
+              <li>JavaScript (ES2023+)</li><li>DOM &amp; Fetch API</li>
+              <li>REST integration</li><li>Web storage</li><li>State basics</li>
+            </ul>
+          </li>
+          <li class="skill">
+            <h3 class="skill__name">Craft &amp; care</h3>
+            <ul class="skill__tags" role="list" aria-label="Craft skills">
+              <li>Accessibility</li><li>Keyboard UX</li>
+              <li>PWA &amp; offline</li><li>Performance budgets</li><li>Git</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ░░ SELECTED PROJECTS · the core — uniform grid of riso prints ░░ -->
+    <section class="catalogue" id="projects" aria-labelledby="cat-title">
+      <div class="band band--invert">
+        <h2 id="cat-title" class="band__title">Selected work</h2>
+        <p class="band__count">Section 03 &middot; three case studies &middot; scroll into the plate room</p>
+      </div>
+
+      <ul class="grid" role="list">
+
+        <!-- Add live demo / repo URLs to the walkthrough links when available -->
+        <li class="card">
+          <a class="card__media" href="#contact" aria-label="TaskFlow, offline-first task management, ask for the walkthrough">
+            <span class="print print--pink-1" aria-hidden="true"></span>
+          </a>
+          <div class="card__meta">
+            <p class="card__tag">01 &middot; currently heading &middot; 2026</p>
+            <h3 class="card__name">TaskFlow</h3>
+            <p class="card__line">Drag-and-drop task management with offline support and shared boards. Keyboard users get the same flow as pointer users &mdash; by design, not afterthought.</p>
+            <ul class="chip-tags" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a class="card__link" href="mailto:balqisazila7@gmail.com?subject=TaskFlow%20case%20study">Ask for the walkthrough</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <a class="card__media" href="#contact" aria-label="Brew and Bean, local roaster storefront, ask for the walkthrough">
+            <span class="print print--pink-2" aria-hidden="true"></span>
+          </a>
+          <div class="card__meta">
+            <p class="card__tag">02 &middot; shipped &middot; 2026</p>
+            <h3 class="card__name">Brew &amp; Bean</h3>
+            <p class="card__line">Responsive storefront for a local coffee roaster &mdash; checkout flow that works as well on a 320&nbsp;pixel viewport as on a desktop.</p>
+            <ul class="chip-tags" aria-label="Technologies used"><li>CSS Grid</li><li>Checkout UX</li><li>PWA</li></ul>
+            <a class="card__link" href="mailto:balqisazila7@gmail.com?subject=Brew%20%26%20Bean%20case%20study">Ask for the walkthrough</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <a class="card__media" href="#contact" aria-label="WeatherLens, hourly weather dashboard, ask for the walkthrough">
+            <span class="print print--pink-3" aria-hidden="true"></span>
+          </a>
+          <div class="card__meta">
+            <p class="card__tag">03 &middot; side project &middot; 2025</p>
+            <h3 class="card__name">WeatherLens</h3>
+            <p class="card__line">A weather dashboard using geolocation and hourly forecast visualizations, installable as a PWA. The hour strip stays readable at every size &mdash; that was the brief.</p>
+            <ul class="chip-tags" aria-label="Technologies used"><li>API</li><li>PWA</li><li>CSS</li></ul>
+            <a class="card__link" href="mailto:balqisazila7@gmail.com?subject=WeatherLens%20case%20study">Ask for the walkthrough</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <p class="catalogue__more">
+        &hellip; each of these lived on my desktop long before it reached this wall.
+        Demo links go up when the current client preview wraps &mdash;
+        <em>email me and I&rsquo;ll walk you through any card on this wall.</em>
+      </p>
+    </section>
+
+    <!-- ░░ JOURNEY · F3 tabular spec sheet (year | entry — genuinely ordinal) ░░ -->
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="band">
+        <h2 id="journey-title" class="band__title"><span class="riso-mis" data-text="Experience">Experience</span> &amp; education</h2>
+        <p class="band__count">Section 04 &middot; the story so far &mdash; placeholders marked, no invented history</p>
+      </div>
+
+      <div class="prog__day">
+        <h3 class="prog__heading"><span class="riso-mis" data-text="Experience">Experience</span></h3>
+        <dl class="timetable">
+          <div class="slot">
+            <dt class="slot__time">Year — Year</dt>
+            <dd class="slot__body"><span class="slot__title">[ Role — add yours ]</span><span class="slot__where">[ Company ]</span></dd>
+          </div>
+          <div class="slot">
+            <dt class="slot__time">Year — Year</dt>
+            <dd class="slot__body"><span class="slot__title">[ Freelance / contract ]</span><span class="slot__where">[ One line on what you shipped ]</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="prog__day">
+        <h3 class="prog__heading"><span class="riso-mis" data-text="Education">Education</span> &amp; learning</h3>
+        <dl class="timetable">
+          <div class="slot">
+            <dt class="slot__time">Year</dt>
+            <dd class="slot__body"><span class="slot__title">[ Degree or program ]</span><span class="slot__where">[ Institution / where ]</span></dd>
+          </div>
+          <div class="slot">
+            <dt class="slot__time">Ongoing</dt>
+            <dd class="slot__body"><span class="slot__title">Independent study</span><span class="slot__where">Specifications, a11y, whatever the current project demands</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ░░ CONTACT · C2-style detail block + info ░░ -->
+    <section class="visit" id="contact" aria-labelledby="contact-title">
+      <div class="visit__lede">
+        <h2 id="contact-title" class="visit__title">Let&rsquo;s build something <span class="riso-mis" data-text="worth keeping.">worth keeping.</span></h2>
+        <p class="visit__body">
+          Open to freelance work and full-time roles. The fastest way to reach me
+          is email &mdash; I reply inside a day. Say what you&rsquo;re making and roughly
+          when it&rsquo;s for.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="mailto:balqisazila7@gmail.com">Write to me</a>
+          <a class="btn btn--text" href="tel:+15551234567">(555) 123-4567</a>
+        </div>
+      </div>
+
+      <dl class="visit__info">
+        <div class="info">
+          <dt>Email</dt>
+          <dd><a href="mailto:balqisazila7@gmail.com">balqisazila7@gmail.com</a></dd>
+        </div>
+        <div class="info">
+          <dt>Phone</dt>
+          <dd><a href="tel:+15551234567">(555) 123-4567</a></dd>
+        </div>
+        <div class="info">
+          <dt>Location</dt>
+          <dd>Austin, TX<br />Remote friendly</dd>
+        </div>
+        <div class="info">
+          <dt>Profiles</dt>
+          <dd>
+            <!-- Add your real profile URLs -->
+            <span class="chip-tags flat" aria-label="Social profiles">
+              <span>GitHub — add URL</span>
+              <span>LinkedIn — add URL</span>
+              <span>X — add URL</span>
+            </span>
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+  </main>
+
+  <!-- ░░ Ft4 · Dense colophon ░░ -->
+  <footer class="colophon" role="contentinfo">
+    <p class="colophon__body">
+      <span class="colophon__mark riso-mis" data-text="Nur Azila Balqis">Nur Azila Balqis</span>
+      &mdash; a front-end developer in Austin, Texas. Edition 2026 &middot; open to freelance &amp; full-time work
+      &middot; <a href="mailto:balqisazila7@gmail.com">balqisazila7@gmail.com</a>.
+      Set in Public&nbsp;Sans, Newsreader and Space&nbsp;Mono. Every mark is hand-built &mdash;
+      the plates, the grain, the off-register ghosts. Printed on screen, no black plate.
+      <a href="#about">About</a> &middot; <a href="#projects">Work</a> &middot; <a href="#journey">Experience</a> &middot; <a href="#contact">Contact</a>.
+      &copy; <span id="year">2026</span> Nur Azila Balqis.
+    </p>
+  </footer>
+
+</body>
+</html>
